@@ -1,0 +1,14 @@
+.thumbnail img {
+  max-height: 200px;
+}
+
+.thumbnail .description {
+  color: lightslategray;
+}
+
+a.navbar-brand #logo {
+  width: 140px;
+  z-index: 1;
+  position: absolute;
+  top: -45px;
+}
