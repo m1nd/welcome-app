@@ -12,8 +12,7 @@ var validator = require("express-validator");
 
 var index = require("./routes/index");
 var welcome = require("./routes/welcome");
-var sign_in = require("./routes/sign-in");
-var sign_up = require("./routes/sign-up");
+var userRoutes = require("./routes/user");
 
 var app = express();
 
@@ -36,11 +35,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/user", userRoutes);
 app.use("/", index);
 app.use("/welcome", welcome);
-app.use("/sign-in", sign_in);
-app.use("/sign-up", sign_up);
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error("Not Found");
