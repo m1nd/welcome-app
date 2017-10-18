@@ -1,0 +1,23 @@
+{
+  "development": {
+    "email": "root@mail.com",
+    "password": "root",
+    "database": "auth",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "email": "test@mail.com",
+    "password": "test",
+    "database": "auth",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+     "email": "",
+    "password": "",
+    "database": "",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
